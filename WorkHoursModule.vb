@@ -1,3 +1,0 @@
-﻿Module WorkHoursModule
-
-End Module

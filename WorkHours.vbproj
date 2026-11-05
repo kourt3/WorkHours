@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AF594074-D0B9-4661-AB32-1B6EEA9E76C1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>WorkHours.Module1</StartupObject>
+    <StartupObject>WorkHours.Main</StartupObject>
     <RootNamespace>WorkHours</RootNamespace>
     <AssemblyName>WorkHours</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -74,7 +74,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Increase\IncreaseView.vb" />
+    <Compile Include="WorkHours\AddWorkHours.vb" />
+    <Compile Include="Increase\IncreaseWorkEntity.vb" />
+    <Compile Include="Main.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -90,8 +93,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="WorkHourEntity.vb" />
-    <Compile Include="WorkHoursModule.vb" />
+    <Compile Include="Options\OptionsEntity.vb" />
+    <Compile Include="Options\OptionView.vb" />
+    <Compile Include="WorkHours\SummarizeWork.vb" />
+    <Compile Include="WorkHours\UpdateWorkHour.vb" />
+    <Compile Include="WorkHours\WorkHourEntity.vb" />
+    <Compile Include="WorkHours\WorkHoursView.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
